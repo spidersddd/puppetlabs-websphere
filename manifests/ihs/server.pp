@@ -7,6 +7,7 @@ define websphere::ihs::server (
   $docroot                 = undef,
   $instance                = $title,
   $httpd_config_template   = "${module_name}/ihs/httpd.conf.erb",
+  $ihs_instance_name       = undef,
   $timeout                 = '300',
   $max_keep_alive_requests = '100',
   $keep_alive              = 'On',

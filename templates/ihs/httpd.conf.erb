@@ -250,7 +250,7 @@ LoadModule whatkilledus_module modules/debug/mod_whatkilledus.so
 NetTraceFile /tmp/nettrace
 NetTrace client * dest file event senddata=65535 event recvdata=65535
 </IfModule>
-#LoadModule was_ap22_module <%= @plugin_root %>/bin/64bits/mod_was_ap22_http.so
-#WebSpherePluginConfig <%= @plugin_root %>/config/<%= @host_short_name %>_<%= @app_name %>/plugin-cfg.xml
+LoadModule was_ap22_module <%= @plugin_base %>/bin/64bits/mod_was_ap22_http.so
+WebSpherePluginConfig <%= @plugin_base %>/config/<%= @ihs_instance_name %>/plugin-cfg.xml
 
 ## EOF
